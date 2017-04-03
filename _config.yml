@@ -10,13 +10,14 @@ permalink:        pretty
 
 # Server
 source:           docs
-destination:      _gh_pages
+#destination:      _gh_pages
+destination:      site
 host:             0.0.0.0
 port:             9001
-baseurl:          ""
+baseurl:          "/site"
 url:              https://v4-alpha.getbootstrap.com
 encoding:         UTF-8
-exclude:          [assets/scss/]
+#exclude:          [assets/scss/]
 
 gems:
   - jekyll-redirect-from

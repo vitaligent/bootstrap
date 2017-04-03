@@ -1,0 +1,664 @@
+:root {
+  --h: 208;
+  --s: 50%;
+  --l: 50%;
+  --a: 1;
+  --color: calc(0 + var(--h)), var(--s), var(--l);
+  --primary: hsla(208, 98%, 43%, 1);
+  --danger: hsla(2, 64%, 58%, 1);
+  --success: hsla(120, 39%, 54%, 1);
+  --info: hsla(194, 66%, 61%, 1);
+  --warning: hsla(35, 84%, 62%, 1);
+
+  color: #f0ea00;
+  color: #b1d700;
+  color: #00ca24;
+  color: #00a877;
+  color: #00a78a;
+  color: #00a59c;
+  color: #00a3ac;
+  color: #0093af;
+  color: #0082b2;
+  color: #006ebf;
+  color: #7d00f8;
+  color: #9f00c5;
+  color: #b900a6;
+  color: #d00081;
+  color: #e20064;
+  color: #f2003c;
+  color: #f85900;
+  color: #f28800;
+  color: #f2ab00;
+  color: #efcc00;
+}
+
+.primary {
+  --h: 208;
+  --s: 20%;
+  background-color: hsl(calc(0 + var(--h)), var(--s), var(--l));
+}
+
+.danger {
+  --h: 2;
+  background-color: hsl(calc(0 + var(--h)), var(--s), var(--l));
+}
+
+.btn {
+  border: 1px solid transparent;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px hsla(208, 98%, 43%, 0.25);
+}
+
+.btn.disabled,
+.btn:disabled {
+  opacity: .65;
+}
+
+.btn.active,
+.btn:active {
+  background-image: none;
+}
+
+.btn-outline-primary.active,
+.btn-outline-primary:active,
+.btn-outline-primary:hover,
+.btn-primary,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: white;
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.btn-primary:hover {
+  color: white;
+  border-color: hsla(208, 99%, 31%, 1);
+  background-color: hsla(208, 98%, 33%, 1);
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus,
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 2px hsla(208, 98%, 43%, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled,
+.card-primary {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+  color: white;
+  border-color: hsla(208, 99%, 31%, 1);
+  background-color: hsla(208, 98%, 33%, 1);
+  background-image: none;
+}
+
+.btn-secondary {
+  color: hsla(200, 0%, 17%, 1);
+  border-color: silver;
+  background-color: white;
+}
+
+.btn-secondary:hover {
+  color: hsla(200, 0%, 17%, 1);
+  border-color: hsla(0, 0%, 68%, 1);
+  background-color: hsla(0, 0%, 90%, 1);
+}
+
+.btn-outline-secondary.focus,
+.btn-outline-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:focus {
+  box-shadow: 0 0 0 2px hsla(0, 0%, 80%, 0.5);
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  border-color: silver;
+  background-color: white;
+}
+
+.btn-secondary.active,
+.btn-secondary:active,
+.show > .btn-secondary.dropdown-toggle {
+  color: hsla(0, 0%, 17%, 1);
+  border-color: hsla(0, 0%, 68%, 1);
+  background-color: hsla(0, 0%, 90%, 1);
+  background-image: none;
+}
+
+.btn-info,
+.btn-outline-info.active,
+.btn-outline-info:active,
+.btn-outline-info:hover,
+.show > .btn-outline-info.dropdown-toggle {
+  color: white;
+  border-color: var(--info);
+  background-color: var(--info);
+}
+
+.btn-info:hover {
+  color: white;
+  border-color: hsla(194, 67%, 49%, 1);
+  background-color: hsla(194, 66%, 51%, 1);
+}
+
+.btn-info.focus,
+.btn-info:focus,
+.btn-outline-info.focus,
+.btn-outline-info:focus {
+  box-shadow: 0 0 0 2px hsla(194, 66%, 61%, 0.5);
+}
+
+.btn-info.disabled,
+.btn-info:disabled,
+.card-info {
+  border-color: var(--info);
+  background-color: var(--info);
+}
+
+.btn-info.active,
+.btn-info:active,
+.show > .btn-info.dropdown-toggle {
+  color: white;
+  border-color: hsla(194, 67%, 49%, 1);
+  background-color: hsla(194, 66%, 51%, 1);
+  background-image: none;
+}
+
+.btn-outline-success.active,
+.btn-outline-success:active,
+.btn-outline-success:hover,
+.btn-success,
+.show > .btn-outline-success.dropdown-toggle {
+  color: white;
+  border-color: var(--success);
+  background-color: var(--success);
+}
+
+.btn-success:hover {
+  color: white;
+  border-color: hsla(120, 40%, 42%, 1);
+  background-color: hsla(120, 40%, 44%, 1);
+}
+
+.btn-outline-success.focus,
+.btn-outline-success:focus,
+.btn-success.focus,
+.btn-success:focus {
+  box-shadow: 0 0 0 2px hsla(120, 39%, 54%, 0.5);
+}
+
+.btn-success.disabled,
+.btn-success:disabled,
+.card-success {
+  border-color: var(--success);
+  background-color: var(--success);
+}
+
+.btn-success.active,
+.btn-success:active,
+.show > .btn-success.dropdown-toggle {
+  color: white;
+  border-color: hsla(120, 40%, 42%, 1);
+  background-color: hsla(120, 40%, 44%, 1);
+  background-image: none;
+}
+
+.btn-outline-warning.active,
+.btn-outline-warning:active,
+.btn-outline-warning:hover,
+.btn-warning,
+.show > .btn-outline-warning.dropdown-toggle {
+  color: white;
+  border-color: var(--warning);
+  background-color: var(--warning);
+}
+
+.btn-warning:hover {
+  color: white;
+  border-color: hsla(35, 84%, 50%, 1);
+  background-color: hsla(35, 84%, 52%, 1);
+}
+
+.btn-outline-warning.focus,
+.btn-outline-warning:focus,
+.btn-warning.focus,
+.btn-warning:focus {
+  box-shadow: 0 0 0 2px hsla(35, 84%, 62%, 0.5);
+}
+
+.btn-warning.disabled,
+.btn-warning:disabled,
+.card-warning {
+  border-color: var(--warning);
+  background-color: var(--warning);
+}
+
+.btn-warning.active,
+.btn-warning:active,
+.show > .btn-warning.dropdown-toggle {
+  color: white;
+  border-color: hsla(35, 84%, 50%, 1);
+  background-color: hsla(35, 84%, 52%, 1);
+  background-image: none;
+}
+
+.btn-danger,
+.btn-outline-danger.active,
+.btn-outline-danger:active,
+.btn-outline-danger:hover,
+.show > .btn-outline-danger.dropdown-toggle {
+  color: white;
+  border-color: var(--danger);
+  background-color: var(--danger);
+}
+
+.btn-danger:hover {
+  color: white;
+  border-color: hsla(2, 64%, 46%, 1);
+  background-color: hsla(2, 64%, 48%, 1);
+}
+
+.btn-danger.focus,
+.btn-danger:focus,
+.btn-outline-danger.focus,
+.btn-outline-danger:focus {
+  box-shadow: 0 0 0 2px hsla(2, 64%, 58%, 0.5);
+}
+
+.btn-danger.disabled,
+.btn-danger:disabled,
+.card-danger {
+  border-color: var(--danger);
+  background-color: var(--danger);
+}
+
+.btn-danger.active,
+.btn-danger:active,
+.show > .btn-danger.dropdown-toggle {
+  color: white;
+  border-color: hsla(2, 64%, 46%, 1);
+  background-color: hsla(2, 64%, 48%, 1);
+  background-image: none;
+}
+
+.btn-outline-primary,
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+  background-image: none;
+}
+
+.btn-outline-secondary {
+  color: silver;
+  border-color: silver;
+  background-color: transparent;
+  background-image: none;
+}
+
+.btn-outline-secondary.active,
+.btn-outline-secondary:active,
+.btn-outline-secondary:hover,
+.show > .btn-outline-secondary.dropdown-toggle {
+  color: hsla(0, 0%, 17%, 1);
+  border-color: silver;
+  background-color: silver;
+}
+
+.btn-outline-secondary.disabled,
+.btn-outline-secondary:disabled {
+  color: silver;
+  background-color: transparent;
+}
+
+.btn-outline-info,
+.btn-outline-info.disabled,
+.btn-outline-info:disabled {
+  color: var(--info);
+  background-color: transparent;
+}
+
+.btn-outline-info {
+  border-color: var(--info);
+  background-image: none;
+}
+
+.btn-outline-success,
+.btn-outline-success.disabled,
+.btn-outline-success:disabled {
+  color: var(--success);
+  background-color: transparent;
+}
+
+.btn-outline-warning,
+.btn-outline-warning.disabled,
+.btn-outline-warning:disabled {
+  color: var(--warning);
+  background-color: transparent;
+}
+
+.btn-outline-success {
+  border-color: var(--success);
+  background-image: none;
+}
+
+.btn-outline-warning {
+  border-color: var(--warning);
+  background-image: none;
+}
+
+.btn-outline-danger,
+.btn-outline-danger.disabled,
+.btn-outline-danger:disabled {
+  color: var(--danger);
+  background-color: transparent;
+}
+
+.btn-outline-danger {
+  border-color: var(--danger);
+  background-image: none;
+}
+
+.btn-link {
+  color: var(--primary);
+}
+
+.btn-link,
+.btn-link.active,
+.btn-link:active,
+.btn-link:disabled,
+.card-danger .card-footer,
+.card-danger .card-header,
+.card-info .card-footer,
+.card-info .card-header,
+.card-outline-danger,
+.card-outline-info,
+.card-outline-primary,
+.card-outline-secondary,
+.card-outline-success,
+.card-outline-warning,
+.card-primary .card-footer,
+.card-primary .card-header,
+.card-success .card-footer,
+.card-success .card-header,
+.card-warning .card-footer,
+.card-warning .card-header {
+  background-color: transparent;
+}
+
+.btn-link,
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+  border-color: transparent;
+}
+
+.btn-link:focus,
+.btn-link:hover {
+  color: hsla(208, 99%, 28%, 1);
+  background-color: transparent;
+}
+
+.btn-link:disabled {
+  color: hsla(0, 0%, 42%, 1);
+}
+
+.card {
+  border: 1px solid hsla(0, 0%, 0%, 0.125);
+  background-color: white;
+}
+
+.card-footer,
+.card-header {
+  background-color: hsla(0, 0%, 97%, 1);
+}
+
+.card-header {
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.125);
+}
+
+.card-footer {
+  border-top: 1px solid hsla(0, 0%, 0%, 0.125);
+}
+
+.card-outline-primary {
+  border-color: var(--primary);
+}
+
+.card-outline-secondary {
+  border-color: silver;
+}
+
+.card-outline-info {
+  border-color: var(--info);
+}
+
+.card-outline-success {
+  border-color: var(--success);
+}
+
+.card-outline-warning {
+  border-color: var(--warning);
+}
+
+.card-outline-danger {
+  border-color: var(--danger);
+}
+
+.card-inverse,
+.card-inverse .card-blockquote .blockquote-footer,
+.card-inverse .card-link,
+.card-inverse .card-subtitle,
+.card-inverse .card-text {
+  color: hsla(0, 0%, 100%, 0.65);
+}
+
+.badge,
+.card-inverse .card-blockquote,
+.card-inverse .card-footer,
+.card-inverse .card-header,
+.card-inverse .card-link:focus,
+.card-inverse .card-link:hover,
+.card-inverse .card-title {
+  color: white;
+}
+
+.card-inverse .card-footer,
+.card-inverse .card-header {
+  border-color: hsla(0, 0%, 100%, 0.2);
+  background-color: transparent;
+}
+
+.badge-default {
+  background-color: hsla(0, 0%, 42%, 1);
+}
+
+.badge-default[href]:focus,
+.badge-default[href]:hover {
+  background-color: hsla(0, 0%, 32%, 1);
+}
+
+.badge-primary {
+  background-color: var(--primary);
+}
+
+.badge-primary[href]:focus,
+.badge-primary[href]:hover {
+  background-color: hsla(208, 98%, 33%, 1);
+}
+
+.badge-success {
+  background-color: var(--success);
+}
+
+.badge-success[href]:focus,
+.badge-success[href]:hover {
+  background-color: hsla(120, 40%, 44%, 1);
+}
+
+.badge-info {
+  background-color: var(--info);
+}
+
+.badge-info[href]:focus,
+.badge-info[href]:hover {
+  background-color: hsla(194, 66%, 51%, 1);
+}
+
+.badge-warning {
+  background-color: var(--warning);
+}
+
+.badge-warning[href]:focus,
+.badge-warning[href]:hover {
+  background-color: hsla(35, 84%, 52%, 1);
+}
+
+.badge-danger {
+  background-color: var(--danger);
+}
+
+.badge-danger[href]:focus,
+.badge-danger[href]:hover {
+  background-color: hsla(2, 64%, 48%, 1);
+}
+
+.bg-faded {
+  background-color: hsla(0, 0%, 97%, 1);
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover {
+  background-color: hsla(208, 98%, 33%, 1) !important;
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+a.bg-success:focus,
+a.bg-success:hover {
+  background-color: hsla(120, 40%, 44%, 1) !important;
+}
+
+.bg-info {
+  background-color: var(--info) !important;
+}
+
+a.bg-info:focus,
+a.bg-info:hover {
+  background-color: hsla(194, 66%, 51%, 1) !important;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+a.bg-warning:focus,
+a.bg-warning:hover {
+  background-color: hsla(35, 84%, 52%, 1) !important;
+}
+
+.bg-danger {
+  background-color: var(--danger) !important;
+}
+
+a.bg-danger:focus,
+a.bg-danger:hover {
+  background-color: hsla(2, 64%, 48%, 1) !important;
+}
+
+.bg-inverse {
+  background-color: hsla(0, 0%, 17%, 1) !important;
+}
+
+a.bg-inverse:focus,
+a.bg-inverse:hover {
+  background-color: black !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-muted {
+  color: hsla(0, 0%, 42%, 1) !important;
+}
+
+a.text-muted:focus,
+a.text-muted:hover {
+  color: hsla(0, 0%, 32%, 1) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+  color: hsla(208, 98%, 33%, 1) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+a.text-success:focus,
+a.text-success:hover {
+  color: hsla(120, 40%, 44%, 1) !important;
+}
+
+.text-info {
+  color: var(--info) !important;
+}
+
+a.text-info:focus,
+a.text-info:hover {
+  color: hsla(194, 66%, 51%, 1) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+a.text-warning:focus,
+a.text-warning:hover {
+  color: hsla(35, 84%, 52%, 1) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+a.text-danger:focus,
+a.text-danger:hover {
+  color: hsla(2, 64%, 48%, 1) !important;
+}
+
+.text-gray-dark {
+  color: hsla(0, 0%, 17%, 1) !important;
+}
+
+a.text-gray-dark:focus,
+a.text-gray-dark:hover {
+  color: black !important;
+}
